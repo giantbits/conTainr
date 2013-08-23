@@ -1,0 +1,1 @@
+Welcome <?php echo Yii::app()->user->publicname; ?>!
