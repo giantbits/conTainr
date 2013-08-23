@@ -1,0 +1,31 @@
+{
+   "title":"To begin with",
+   "author":"Steffen Gudis",
+   "creationdate":"2013",
+   "templates":{
+      "landing":{
+         "title":"Landing page",
+         "file":"landing.php",
+         "thumbnail":"landing.png",
+         "structure":"[[\"jumbotron\"],[\"cntleft\",\"cntright\"]]"
+      },
+      "main":{
+         "title":"One column",
+         "file":"onecol.php",
+         "thumbnail":"onecol.png",
+         "structure":"[[\"cntmain\"]]"
+      },
+      "twocol":{
+         "title":"Two columns",
+         "file":"twocol.php",
+         "thumbnail":"twocol.png",
+         "structure":"[[\"cntmain\",\"cntright\"]]"
+      },
+      "threecol":{
+         "title":"Three columns",
+         "file":"threecol.php",
+         "thumbnail":"threecol.png",
+         "structure":"[[\"cntleft\",\"cntmain\",\"cntright\"]]"
+      }
+   }
+}
