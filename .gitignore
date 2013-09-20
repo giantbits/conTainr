@@ -1,2 +1,4 @@
 assets/*
 protected/runtime/application.log
+
+protected/config/config.php
