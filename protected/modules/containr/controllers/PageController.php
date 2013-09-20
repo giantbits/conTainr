@@ -190,6 +190,8 @@ class PageController extends ContainrController
 	public function actionBuild() {
 		$pages = ContainrPage::model()->findAll();
 		if (count($pages)==0) {
+
+
 			// build root node
 			$root = new ContainrPage();
 			$root->title = Yii::app()->name;
@@ -204,11 +206,12 @@ class PageController extends ContainrController
 			$homePage->template = 'main';
 			$homePage->appendTo($root);
 
+
 			// generate admin user
 			$user = new ContainrUser();
 			$user->login = 'admin';
 			$user->email = 'admin@examplemail.com';
-			$user->password = crypt('temppwd');
+			$user->password = 'temppwd';
 			$user->passwordConfirm = 'temppwd';
 			$user->nameLast = 'Doe';
 			$user->nameFirst = 'John';
@@ -217,7 +220,7 @@ class PageController extends ContainrController
 			$user->save();
 
 
-			$this->renderText('Root-node and home page created. Return to ' . CHtml::link('page overview', $this->createUrl('page/index')));
+			echo 'Root-node and home page created. Return to ' . CHtml::link('page overview', $this->createUrl('page/index'));
 		} else {
 			echo "Build was alredy executed...";
 		}

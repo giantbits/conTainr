@@ -10,6 +10,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'conTainr | To begin with',
 	'theme'=>'containr',
+	'theme'=>'tobeginwith',
 
 	// preloading 'log' component
 	'preload'=>array(
@@ -80,6 +81,7 @@ return array(
 			'username' => 'XXX',
 			'password' => 'XXX',
 			'charset' => 'XXX'
+			'charset' => 'utf8'
 		),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors

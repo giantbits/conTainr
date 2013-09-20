@@ -68,7 +68,7 @@ class ContainrUserGroup extends CComponent {
 		return $accessible;
 	}
 
-	private function _getCachedGroupAccess($page) {
+	private static function _getCachedGroupAccess($page) {
 		$groupaccess = $page->cachedGroupAccess;
 
 		if (count($groupaccess) == 0) { //build cache

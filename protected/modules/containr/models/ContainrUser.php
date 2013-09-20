@@ -40,7 +40,7 @@ class ContainrUser extends CActiveRecord
 		// will receive user inputs.
 
 		return array(
-			(Yii::app()->user->isGuest) ? array('email,nameLast,nameFirst,street,city,zip', 'required') : array('password,email,nameLast,nameFirst,passwordConfirm', 'required'),
+			//(Yii::app()->user->isGuest) ? array('email,nameLast,nameFirst,street,city,zip', 'required') : array('password,email,nameLast,nameFirst,passwordConfirm', 'required'),
 			//(!Yii::app()->user->isGuest) ? array('login', 'required') : array('login','safe'),
 			array('email', 'email'),
 			array('email', 'unique'),

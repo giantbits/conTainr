@@ -79,7 +79,7 @@ class ContainrPage extends CActiveRecord
 		return $rtn;
 	}
 
-	private function parseTree(&$tree,$level,$accessibleOnly) {
+	private static function parseTree(&$tree,$level,$accessibleOnly) {
 		$rtn = array();
 		while (count($tree)>0 && $tree[0]->level == $level) {
 			$leaf = array_shift($tree);
