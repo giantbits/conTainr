@@ -43,6 +43,7 @@
 		<?php echo $form->textFieldRow($model, 'email', array('class'=>'span12')); ?>
 		<?php echo $form->textFieldRow($model, 'login', array('class'=>'span12')); ?>
 	    <?php echo $form->passwordFieldRow($model, 'password', array('class'=>'span12')); ?>
+	    <?php echo $form->passwordFieldRow($model, 'passwordConfirm', array('class'=>'span12')); ?>
 	    <?php echo $form->dropDownListRow($model, 'role',array(0=>'Rolle', 5=>'Admin')); ?>
 	    <?php $this->endWidget(); ?>
 

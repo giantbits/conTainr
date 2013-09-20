@@ -111,6 +111,7 @@ class ContainrUser extends CActiveRecord
 	{
 
 		$this->dateLastUpdate = time();
+		$this->password = crypt($this->password);
 
 		return true;
 	}

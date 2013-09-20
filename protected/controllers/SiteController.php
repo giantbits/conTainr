@@ -20,7 +20,7 @@ class SiteController extends Controller
 			),
 		);
 	}
-	
+
 	public function behaviors() {
         return array('containr' => array(
                 'class' => 'application.modules.containr.components.ContainrBehavior')
@@ -37,6 +37,7 @@ class SiteController extends Controller
 		Yii::app()->getModule('containr');
 
 		if(!isset($_GET['code'])) $_GET['code'] = 'home';
+		if(!isset($_GET['contentPageId'])) $_GET['contentPageId'] = -1;
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		//$this->render('index');
